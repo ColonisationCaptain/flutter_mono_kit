@@ -126,12 +126,15 @@ class _CellState extends State<Cell> with SingleTickerProviderStateMixin {
   }
 
   Widget _buildOpenButton(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        elevation: 0,
+        // TODO(mono):
+        // highlightElevation: 0,
+        // textTheme: ButtonTextTheme.accent,
+      ),
       child: const Text('OPEN'),
       onPressed: () {},
-      elevation: 0,
-      highlightElevation: 0,
-      textTheme: ButtonTextTheme.accent,
     );
   }
 }
@@ -188,9 +191,12 @@ class __DescState extends State<_Desc> {
                 ),
               ),
               padding: const EdgeInsets.only(left: 32),
-              child: FlatButton(
-                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                padding: const EdgeInsets.all(4),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  // TODO(mono):
+                  // materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  padding: const EdgeInsets.all(4),
+                ),
                 onPressed: () =>
                     widget.additionalHeightNeeded(_overflowNotifier.value),
                 child: Text(

@@ -8,13 +8,13 @@ dependencies:
   cupertino_icons:
   flutter:
     sdk: flutter
+  flutter_hooks:
   hooks_riverpod:
   mono_kit:
     path: ..
+  nested:
   recase:
   simple_logger:
-  flutter_hooks:
-  nested:
 dev_dependencies:
   flutter_test:
     sdk: flutter

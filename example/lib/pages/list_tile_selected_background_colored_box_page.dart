@@ -35,7 +35,7 @@ class _ListTileSelectedBackgroundColoredBoxPageState
         ),
       ),
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: const Text('BACK'),
           onPressed: () => Navigator.of(context).pop(),
         ),

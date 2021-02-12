@@ -33,7 +33,7 @@ class _BannerVisibilityPageState extends State<BannerVisibilityPage> {
             child: MaterialBanner(
               content: const Text('This is a banner. Dismiss me'),
               actions: <Widget>[
-                FlatButton(
+                TextButton(
                   onPressed: () async => _isVisible.value = false,
                   child: const Text('DISMISS'),
                 ),
